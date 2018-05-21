@@ -49,11 +49,13 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true,
+    watchContentBase: true,
     noInfo: true
   },
   performance: {
     hints: false
   },
+  mode: 'development',
   plugins: [
     // make sure to include the plugin for the magic
     new VueLoaderPlugin()
