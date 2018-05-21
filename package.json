@@ -1,31 +1,22 @@
 {
-  "name": "typescript-vue-starter",
+  "name": "destiny-2-exotic-catalyst",
   "version": "1.0.0",
-  "private": true,
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": {
-    "name": "Daniel Rosenwasser",
-    "url": "https://github.com/DanielRosenwasser"
-  },
-  "license": "Apache-2.0",
-  "dependencies": {
-    "vue": "^2.5.2",
-    "vue-class-component": "^6.0.0",
-    "vue-property-decorator": "^6.0.0",
-    "vue-router": "^3.0.1"
-  },
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
-    "css-loader": "^0.28.1",
-    "ts-loader": "^2.0.3",
-    "typescript": "^2.7.2",
-    "vue-loader": "^12.0.3",
-    "vue-template-compiler": "^2.5.2",
-    "webpack": "^2.5.0"
+    "css-loader": "^0.28.11",
+    "ts-loader": "^4.3.0",
+    "typescript": "^2.8.3",
+    "vue": "^2.5.16",
+    "vue-loader": "^15.1.0",
+    "vue-template-compiler": "^2.5.16",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^2.1.3"
   }
 }

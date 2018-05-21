@@ -1,7 +1,6 @@
-
 var path = require('path')
 var webpack = require('webpack')
-
+const { VueLoaderPlugin } = require('vue-loader')
 module.exports = {
   entry: './src/index.ts',
   output: {
@@ -55,6 +54,10 @@ module.exports = {
   performance: {
     hints: false
   },
+  plugins: [
+    // make sure to include the plugin for the magic
+    new VueLoaderPlugin()
+  ],
   devtool: '#eval-source-map'
 }
 
