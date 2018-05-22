@@ -1,9 +1,9 @@
 [{
+    "thumb": "assets/borealis.png",
     "name": "Borealis",
     "isAvailable": true,
-    "weaponType": "",
-    "unlockMethod": "",
-    "completionCriteria": "",
-    "perkDescription": ""
-
+    "weaponType": "Exotic Sniper Rifle",
+    "unlockMethod": "Defeat enemies using Borealis to unlock this upgrade.",
+    "completionCriteria": "150 Arc Kills / 150 Solar Kills / 150 Void Kills",
+    "perkDescription": "+20 Reload Speed"
 }]
