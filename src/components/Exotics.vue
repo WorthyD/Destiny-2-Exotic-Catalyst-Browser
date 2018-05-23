@@ -54,8 +54,9 @@ export default Vue.extend({
 
 
 <style lang="scss" scoped>
-body{
-  margin:0;
+div{
+  padding:20px;
 }
+@import '../scss/main.scss';
 
 </style>
