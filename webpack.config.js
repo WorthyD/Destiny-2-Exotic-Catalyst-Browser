@@ -1,6 +1,10 @@
 var path = require('path')
 var webpack = require('webpack')
-const { VueLoaderPlugin } = require('vue-loader')
+const {
+  VueLoaderPlugin
+} = require('vue-loader')
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
 module.exports = {
   entry: './src/index.ts',
   output: {
@@ -9,8 +13,7 @@ module.exports = {
     filename: 'build.js'
   },
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.vue$/,
         loader: 'vue-loader',
         options: {
@@ -18,11 +21,32 @@ module.exports = {
             // Since sass-loader (weirdly) has SCSS as its default parse mode, we map
             // the "scss" and "sass" values for the lang attribute to the right configs here.
             // other preprocessors should work out of the box, no loader config like this necessary.
-            'scss': 'vue-style-loader!css-loader!sass-loader',
-            'sass': 'vue-style-loader!css-loader!sass-loader?indentedSyntax',
+            'scss': [
+              'vue-style-loader',
+              'css-loader',
+              'sass-loader'
+            ],
           }
           // other vue-loader options go here
-        }
+        },
+        /*
+        { // css / sass / scss loader for webpack
+          test: /\.(css|sass|scss)$/,
+          use: [MiniCssExtractPlugin.loader,
+              {
+                  loader: "css-loader",
+                  options: {
+                      url: false
+                  }
+              }, 'sass-loader'
+          ],
+      }
+      */
+
+      },
+      {
+        test: /\.s[a|c]ss$/,
+        loader: 'style-loader!css-loader!sass-loader'
       },
       {
         test: /\.tsx?$/,

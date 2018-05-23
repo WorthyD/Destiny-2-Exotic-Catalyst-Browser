@@ -1,5 +1,6 @@
 import Vue from "vue";
 import ExoticsComponent from "./components/Exotics.vue";
+import './scss/main.scss';
 
 let v = new Vue({
     el: "#app",

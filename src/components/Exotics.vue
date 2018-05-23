@@ -53,3 +53,9 @@ export default Vue.extend({
 </script>
 
 
+<style lang="scss" scoped>
+body{
+  margin:0;
+}
+
+</style>
