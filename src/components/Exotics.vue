@@ -53,10 +53,10 @@ export default Vue.extend({
 </script>
 
 
-<style lang="scss" >
-div{
-  padding:20px;
+<!--<style>
+.greeting {
+    font-size: 20px;
 }
-@import '../scss/main.scss';
-
 </style>
+-->
+<style src="./exotics.css"></style>
