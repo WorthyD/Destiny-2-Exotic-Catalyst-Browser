@@ -53,7 +53,7 @@ export default Vue.extend({
 </script>
 
 
-<style lang="scss" scoped>
+<style lang="scss" >
 div{
   padding:20px;
 }
