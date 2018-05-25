@@ -59,4 +59,4 @@ export default Vue.extend({
 }
 </style>
 -->
-<style src="./exotics.css"></style>
+<style src="./exotics.scss"></style>
