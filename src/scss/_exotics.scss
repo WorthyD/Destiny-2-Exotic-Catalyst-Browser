@@ -1,0 +1,56 @@
+@import "_variables.scss";
+.exotic {
+    border-bottom: 1px solid rgba(245,245,245,0.1);
+    padding:1em 0;
+
+    img {
+        display: block;
+        height: 96px;
+        width: 96px;
+        overflow: hidden;
+        margin:0 auto;
+        @media (min-width: $screen-sm) {
+            float:left;
+            margin-right: 20px;
+        }
+    }
+    .exotic-info {
+        overflow: hidden;
+        h3 span {
+            font-size: .8em;
+            float: right;
+            text-transform: none;
+            padding:.5em 1em;
+
+        }
+        .available{
+            background-color:$green;
+        }
+        .unavailable{
+            background-color:$red;
+        }
+ 
+    }
+    .title {
+        margin: 0;
+    }
+    .sub-title {
+        margin: 0;
+        margin-top: .5em;
+        font-size: .8em;
+    }
+    .unlock-proper {
+        font-style: italic;
+    }
+    .unlock-info {
+        display: flex;
+        justify-content: space-between;
+        div {
+            flex-basis: 50%;
+        }
+        h5 {
+            margin: 0;
+            font-size: 1.1em;
+        }
+    }
+}

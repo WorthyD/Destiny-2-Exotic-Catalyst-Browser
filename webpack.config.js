@@ -44,14 +44,14 @@ module.exports = {
       */
 
       },
+       {
+         test: /\.s[a|c]ss$/,
+         loader: 'vue-style-loader!css-loader!sass-loader'
+       },
       // {
-      //   test: /\.s[a|c]ss$/,
-      //   loader: 'css-loader!sass-loader'
+      //   test: /\.css$/,
+      //   loader: 'vue-style-loader!css-loader'
       // },
-      {
-        test: /\.css$/,
-        loader: 'vue-style-loader!css-loader'
-      },
  
       {
         test: /\.tsx?$/,

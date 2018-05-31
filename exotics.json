@@ -3,7 +3,18 @@
     "name": "Borealis",
     "isAvailable": true,
     "weaponType": "Exotic Sniper Rifle",
-    "unlockMethod": "Defeat enemies using Borealis to unlock this upgrade.",
-    "completionCriteria": "150 Arc Kills / 150 Solar Kills / 150 Void Kills",
+    "unlockMethod": "Defeat enemies of the darkness to ",
+    "unlockMethodDesc": "Defeat enemies using Borealis to unlock this upgrade.",
+    "completionCriteria": "150 Arc Kills <br> 150 Solar Kills <br> 150 Void Kills",
+    "perkDescription": "+20 Reload Speed"
+},
+{
+    "thumb": "assets/borealis.png",
+    "name": "Darci",
+    "isAvailable": false,
+    "weaponType": "Exotic Sniper Rifle",
+    "unlockMethod": "Defeat enemies of the darkness to ",
+    "unlockMethodDesc": "Defeat enemies using Borealis to unlock this upgrade.",
+    "completionCriteria": "150 Arc Kills <br> 150 Solar Kills <br> 150 Void Kills",
     "perkDescription": "+20 Reload Speed"
 }]
