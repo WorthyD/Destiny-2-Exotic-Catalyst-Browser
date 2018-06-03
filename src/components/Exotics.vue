@@ -2,11 +2,11 @@
 <template>
    <div>
   <div>
-    <input type="text" v-model="search" />
+    <input type="text" v-model="search"  />
   </div>
  
       <ul>
-          <li v-for="e in filteredList" class="exotic">
+          <li v-for="e in filteredList"  v-bind:key="e.name" class="exotic">
             <img :src="e.thumb" alt=""> 
             <div class="exotic-info">  
               <h3 class="title">{{e.name}} <span v-if="e.isAvailable" class="available">Available</span><span class="unavailable" v-else>Unavailable</span></h3>
@@ -33,32 +33,50 @@
 </template>
 
 <script lang="ts">
-import axios from 'axios';
+//https://codepen.io/SitePoint/pen/pPojGY?editors=0010
+import axios from "axios";
 
-import { Exotic } from '../interfaces/exotic';
-import { Vue, Component, Prop, Provide, Inject } from 'vue-property-decorator';
+import { Exotic } from "../interfaces/exotic";
+import {
+  Vue,
+  Component,
+  Prop,
+  Provide,
+  Inject,
+  Emit,
+  Model
+} from "vue-property-decorator";
 
 @Component
 export default class ExoticDecorator extends Vue {
-  @Prop() items!: Exotic[];
+  @Provide() items!: Exotic[];
 
-//  @Inject() search:string;
-  @Provide() search: string = '';
+  //  @Inject() search:string;
+  @Provide() search: string = "";
 
   created() {
-    axios.get('exotics.json').then(response => {
+    console.log("updating");
+    axios.get("exotics.json").then(response => {
       this.items = response.data;
     });
   }
-  filteredList() {
-    return this.items.filter(e => {
-      if (!e.name) {
-        return false;
-      }
-      console.log(e.name.toLowerCase());
-      //return e.name.toLowerCase().includes(this.search.toLowerCase());
-      //return false;
-    });
+  get filteredList() {
+    console.log("filtering");
+    if (this.items) {
+      var filteredItems = this.items.filter(e => {
+        if (!e.name) {
+          return false;
+        }
+        console.log(e.name.toLowerCase());
+        //return e.name.toLowerCase().includes(this.search.toLowerCase());
+        //return false;
+        return true;
+      });
+      console.log(filteredItems);
+      return filteredItems;
+    } else {
+      return [];
+    }
   }
 }
 </script>
