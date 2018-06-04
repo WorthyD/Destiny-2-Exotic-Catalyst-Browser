@@ -1,14 +1,26 @@
 @import "_variables.scss";
-.exotic {
-    border-bottom: 1px solid rgba(245,245,245,0.1);
-    padding:1em 0;
+.exotics {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $screen-lg) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .exotic {
+            flex-basis: 49%;
+        }
+    }
+}
 
+.exotic {
+    border-bottom: 1px solid rgba(245, 245, 245, 0.1);
+    padding: 1em 0;
     img {
         display: block;
         height: 96px;
         width: 96px;
         overflow: hidden;
-        margin:0 auto;
+        margin: 0 auto;
         @media (min-width: $screen-sm) {
             float:left;
             margin-right: 20px;
@@ -20,16 +32,14 @@
             font-size: .8em;
             float: right;
             text-transform: none;
-            padding:.5em 1em;
-
+            padding: .5em 1em;
         }
-        .available{
-            background-color:$green;
+        .available {
+            background-color: $green;
         }
-        .unavailable{
-            background-color:$red;
+        .unavailable {
+            background-color: $red;
         }
- 
     }
     .title {
         margin: 0;

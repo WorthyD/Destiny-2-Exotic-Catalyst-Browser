@@ -3,10 +3,20 @@
    <div>
   <div>
     <input type="text" v-model="search"  />
+    <select v-model="weaponType">
+      <option value="">Any</option>
+      <option value="Exotic Sniper Rifle">Sniper Rifles</option>
+      <option value="Exotic Scout Rifle">Scout Rifles</option>
+    </select>
+    <label>
+      <input type="checkbox" v-model="hideInactive">
+      Hide Unavailable
+    </label>
   </div>
  
-      <ul>
-          <li v-for="e in filteredList"  v-bind:key="e.name" class="exotic">
+      <ul class="exotics">
+          <li v-for="e in filteredItems"  v-bind:key="e.name" class="exotic">
+          <!-- <li v-for="e in items"  v-bind:key="e.name" class="exotic"> -->
             <img :src="e.thumb" alt=""> 
             <div class="exotic-info">  
               <h3 class="title">{{e.name}} <span v-if="e.isAvailable" class="available">Available</span><span class="unavailable" v-else>Unavailable</span></h3>
@@ -34,9 +44,10 @@
 
 <script lang="ts">
 //https://codepen.io/SitePoint/pen/pPojGY?editors=0010
-import axios from "axios";
+import axios from 'axios';
 
-import { Exotic } from "../interfaces/exotic";
+import { Exotic } from '../interfaces/exotic';
+/*
 import {
   Vue,
   Component,
@@ -63,6 +74,7 @@ export default class ExoticDecorator extends Vue {
   get filteredList() {
     console.log("filtering");
     if (this.items) {
+      
       var filteredItems = this.items.filter(e => {
         if (!e.name) {
           return false;
@@ -79,5 +91,78 @@ export default class ExoticDecorator extends Vue {
     }
   }
 }
+*/
+
+import Vue from 'vue';
+export default Vue.extend({
+  props: ['items'],
+  data() {
+    return {
+      search: '',
+      weaponType: '',
+      filteredItems: [],
+      hideInactive: false
+    };
+  },
+  watch: {
+    search: function() {
+      this.setFilteredItems();
+    },
+    weaponType: function() {
+      this.setFilteredItems();
+    },
+    hideInactive: function() {
+      this.setFilteredItems();
+    }
+  },
+  created() {
+    this.setFilteredItems();
+  },
+  //  methods: {
+  //   getItems() {
+  //     console.log('updating');
+  //     axios.get('exotics.json').then(response => {
+  //       this.items = response.data;
+  //     });
+  //   }
+  // },
+  methods: {
+    setFilteredItems(): any {
+      if (this.items) {
+        var filteredItems = this.items.filter((e: Exotic) => {
+          if (!e.name) {
+            return false;
+          }
+
+          let include = true;
+
+          if (
+            this.search.length > 0 &&
+            e.name.toLowerCase().indexOf(this.search.toLowerCase()) === -1
+          ) {
+            include = false;
+          }
+
+          if (this.weaponType.length > 0 && e.weaponType !== this.weaponType) {
+            include = false;
+          }
+
+          if (this.hideInactive === true && e.isAvailable === false){
+            include = false;
+          }
+
+          return include;
+          //return false;
+          //return true;
+        });
+        console.log(filteredItems);
+        this.filteredItems = filteredItems;
+      } else {
+        this.filteredItems = [];
+      }
+    }
+  }
+});
 </script>
+
 <style src="../scss/main.scss"></style>
