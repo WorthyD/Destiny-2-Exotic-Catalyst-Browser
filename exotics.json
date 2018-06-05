@@ -1,33 +1,291 @@
 [{
-    "thumb": "assets/borealis.png",
-    "name": "Borealis",
-    "isAvailable": true,
-    "weaponType": "Exotic Sniper Rifle",
-    "unlockMethod": "Defeat enemies of the darkness to ",
-    "unlockMethodDesc": "Defeat enemies using Borealis to unlock this upgrade.",
-    "completionCriteria": "150 Arc Kills <br> 150 Solar Kills <br> 150 Void Kills",
-    "perkDescription": "+20 Reload Speed"
-},
-{
-    "thumb": "assets/borealis.png",
-    "name": "Darci",
-    "isAvailable": false,
-    "weaponType": "Exotic Scout Rifle",
-    "unlockMethod": "Defeat enemies of the darkness to ",
-    "unlockMethodDesc": "Defeat enemies using Borealis to unlock this upgrade.",
-    "completionCriteria": "150 Arc Kills <br> 150 Solar Kills <br> 150 Void Kills",
-    "perkDescription": "+20 Reload Speed"
-},
-{
-    "thumb": "assets/borealis.png",
-    "name": "Black Spindle",
-    "isAvailable": false,
-    "weaponType": "Exotic Scout Rifle",
-    "unlockMethod": "Defeat enemies of the darkness to ",
-    "unlockMethodDesc": "Defeat enemies using Borealis to unlock this upgrade.",
-    "completionCriteria": "150 Arc Kills <br> 150 Solar Kills <br> 150 Void Kills",
-    "perkDescription": "+20 Reload Speed"
-}
-
-
+        "thumb": "assets/borealis.png",
+        "name": "Borealis",
+        "isAvailable": true,
+        "weaponType": "Exotic Sniper Rifle",
+        "unlockMethod": "Defeat enemies of the darkness to ",
+        "unlockMethodDesc": "Defeat enemies using Borealis to unlock this upgrade.",
+        "completionCriteria": "150 Arc Kills <br> 150 Solar Kills <br> 150 Void Kills",
+        "perkDescription": "+20 Reload Speed"
+    },
+    {
+        "thumb": "assets/.png",
+        "name": "Coldheart",
+        "isAvailable": false,
+        "weaponType": "",
+        "unlockMethod": "",
+        "unlockMethodDesc": "",
+        "completionCriteria": "",
+        "perkDescription": ""
+    },
+    {
+        "thumb": "assets/.png",
+        "name": "The Colony",
+        "isAvailable": false,
+        "weaponType": "",
+        "unlockMethod": "",
+        "unlockMethodDesc": "",
+        "completionCriteria": "",
+        "perkDescription": ""
+    },
+    {
+        "thumb": "assets/.png",
+        "name": "Crimson",
+        "isAvailable": false,
+        "weaponType": "",
+        "unlockMethod": "",
+        "unlockMethodDesc": "",
+        "completionCriteria": "",
+        "perkDescription": ""
+    },
+    {
+        "thumb": "assets/.png",
+        "name": "D.A.R.C.I.",
+        "isAvailable": false,
+        "weaponType": "",
+        "unlockMethod": "",
+        "unlockMethodDesc": "",
+        "completionCriteria": "",
+        "perkDescription": ""
+    },
+    {
+        "thumb": "assets/.png",
+        "name": "Fighting Lion",
+        "isAvailable": false,
+        "weaponType": "",
+        "unlockMethod": "",
+        "unlockMethodDesc": "",
+        "completionCriteria": "",
+        "perkDescription": ""
+    },
+    {
+        "thumb": "assets/.png",
+        "name": "Graviton Lance",
+        "isAvailable": false,
+        "weaponType": "",
+        "unlockMethod": "",
+        "unlockMethodDesc": "",
+        "completionCriteria": "",
+        "perkDescription": ""
+    },
+    {
+        "thumb": "assets/.png",
+        "name": "Hard Light",
+        "isAvailable": false,
+        "weaponType": "",
+        "unlockMethod": "",
+        "unlockMethodDesc": "",
+        "completionCriteria": "",
+        "perkDescription": ""
+    },
+    {
+        "thumb": "assets/.png",
+        "name": "The Huckleberry",
+        "isAvailable": false,
+        "weaponType": "",
+        "unlockMethod": "",
+        "unlockMethodDesc": "",
+        "completionCriteria": "",
+        "perkDescription": ""
+    },
+    {
+        "thumb": "assets/.png",
+        "name": "Jade Rabbit",
+        "isAvailable": false,
+        "weaponType": "",
+        "unlockMethod": "",
+        "unlockMethodDesc": "",
+        "completionCriteria": "",
+        "perkDescription": ""
+    },
+    {
+        "thumb": "assets/.png",
+        "name": "Legend of Acrius",
+        "isAvailable": false,
+        "weaponType": "",
+        "unlockMethod": "",
+        "unlockMethodDesc": "",
+        "completionCriteria": "",
+        "perkDescription": ""
+    },
+    {
+        "thumb": "assets/.png",
+        "name": "Merciless",
+        "isAvailable": false,
+        "weaponType": "",
+        "unlockMethod": "",
+        "unlockMethodDesc": "",
+        "completionCriteria": "",
+        "perkDescription": ""
+    },
+    {
+        "thumb": "assets/.png",
+        "name": "MIDA Multi-Tool",
+        "isAvailable": false,
+        "weaponType": "",
+        "unlockMethod": "",
+        "unlockMethodDesc": "",
+        "completionCriteria": "",
+        "perkDescription": ""
+    },
+    {
+        "thumb": "assets/.png",
+        "name": "Polaris Lance",
+        "isAvailable": false,
+        "weaponType": "",
+        "unlockMethod": "",
+        "unlockMethodDesc": "",
+        "completionCriteria": "",
+        "perkDescription": ""
+    },
+    {
+        "thumb": "assets/.png",
+        "name": "Prometheus Lens",
+        "isAvailable": false,
+        "weaponType": "",
+        "unlockMethod": "",
+        "unlockMethodDesc": "",
+        "completionCriteria": "",
+        "perkDescription": ""
+    },
+    {
+        "thumb": "assets/.png",
+        "name": "The Prospector",
+        "isAvailable": false,
+        "weaponType": "",
+        "unlockMethod": "",
+        "unlockMethodDesc": "",
+        "completionCriteria": "",
+        "perkDescription": ""
+    },
+    {
+        "thumb": "assets/.png",
+        "name": "Rat King",
+        "isAvailable": false,
+        "weaponType": "",
+        "unlockMethod": "",
+        "unlockMethodDesc": "",
+        "completionCriteria": "",
+        "perkDescription": ""
+    },
+    {
+        "thumb": "assets/.png",
+        "name": "Riskrunner",
+        "isAvailable": false,
+        "weaponType": "",
+        "unlockMethod": "",
+        "unlockMethodDesc": "",
+        "completionCriteria": "",
+        "perkDescription": ""
+    },
+    {
+        "thumb": "assets/.png",
+        "name": "Skyburner Oath",
+        "isAvailable": false,
+        "weaponType": "",
+        "unlockMethod": "",
+        "unlockMethodDesc": "",
+        "completionCriteria": "",
+        "perkDescription": ""
+    },
+    {
+        "thumb": "assets/.png",
+        "name": "Sleeper Simulant",
+        "isAvailable": false,
+        "weaponType": "",
+        "unlockMethod": "",
+        "unlockMethodDesc": "",
+        "completionCriteria": "",
+        "perkDescription": ""
+    },
+    {
+        "thumb": "assets/.png",
+        "name": "Sturm",
+        "isAvailable": false,
+        "weaponType": "",
+        "unlockMethod": "",
+        "unlockMethodDesc": "",
+        "completionCriteria": "",
+        "perkDescription": ""
+    },
+    {
+        "thumb": "assets/.png",
+        "name": "Sunshot",
+        "isAvailable": false,
+        "weaponType": "",
+        "unlockMethod": "",
+        "unlockMethodDesc": "",
+        "completionCriteria": "",
+        "perkDescription": ""
+    },
+    {
+        "thumb": "assets/.png",
+        "name": "SUROS Regime",
+        "isAvailable": false,
+        "weaponType": "",
+        "unlockMethod": "",
+        "unlockMethodDesc": "",
+        "completionCriteria": "",
+        "perkDescription": ""
+    },
+    {
+        "thumb": "assets/.png",
+        "name": "Sweet Business",
+        "isAvailable": false,
+        "weaponType": "",
+        "unlockMethod": "",
+        "unlockMethodDesc": "",
+        "completionCriteria": "",
+        "perkDescription": ""
+    },
+    {
+        "thumb": "assets/.png",
+        "name": "Telesto",
+        "isAvailable": false,
+        "weaponType": "",
+        "unlockMethod": "",
+        "unlockMethodDesc": "",
+        "completionCriteria": "",
+        "perkDescription": ""
+    },
+    {
+        "thumb": "assets/.png",
+        "name": "Tractor Cannon",
+        "isAvailable": false,
+        "weaponType": "",
+        "unlockMethod": "",
+        "unlockMethodDesc": "",
+        "completionCriteria": "",
+        "perkDescription": ""
+    },
+    {
+        "thumb": "assets/.png",
+        "name": "Vigilance Wing",
+        "isAvailable": false,
+        "weaponType": "",
+        "unlockMethod": "",
+        "unlockMethodDesc": "",
+        "completionCriteria": "",
+        "perkDescription": ""
+    },
+    {
+        "thumb": "assets/.png",
+        "name": "Wardcliff Coil",
+        "isAvailable": false,
+        "weaponType": "",
+        "unlockMethod": "",
+        "unlockMethodDesc": "",
+        "completionCriteria": "",
+        "perkDescription": ""
+    },
+    {
+        "thumb": "assets/.png",
+        "name": "Wordline Zero",
+        "isAvailable": false,
+        "weaponType": "",
+        "unlockMethod": "",
+        "unlockMethodDesc": "",
+        "completionCriteria": "",
+        "perkDescription": ""
+    }
 ]
