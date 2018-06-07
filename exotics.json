@@ -9,239 +9,249 @@
         "perkDescription": "+20 Reload Speed"
     },
     {
-        "thumb": "assets/.png",
+        "thumb": "assets/coldheart.png",
         "name": "Coldheart",
-        "isAvailable": false,
-        "weaponType": "",
+        "isAvailable": true,
+        "weaponType": "Exotic Auto Rifle",
         "unlockMethod": "",
-        "unlockMethodDesc": "",
-        "completionCriteria": "",
-        "perkDescription": ""
+        "unlockMethodDesc": "Heroic Strike/Nightfall bosses",
+        "completionCriteria": "300 kills",
+        "perkDescription": "+20 Stability<br>+20 Reload Speed"
     },
     {
-        "thumb": "assets/.png",
+        "thumb": "assets/the-colony.png",
         "name": "The Colony",
-        "isAvailable": false,
-        "weaponType": "",
+        "isAvailable": true,
+        "weaponType": "Exotic Grenade Launcher",
         "unlockMethod": "",
-        "unlockMethodDesc": "",
-        "completionCriteria": "",
-        "perkDescription": ""
+        "unlockMethodDesc": "Crucible victories",
+        "completionCriteria": "500 Kills",
+        "perkDescription": "+10 Magazine<br>+30 Weapon Size<br>Deeper Pockets (Perk) Increased ammo reserves"
     },
     {
-        "thumb": "assets/.png",
+        "thumb": "assets/crimson.png",
         "name": "Crimson",
-        "isAvailable": false,
-        "weaponType": "",
+        "isAvailable": true,
+        "weaponType": "Exotic Hand Cannon",
         "unlockMethod": "",
         "unlockMethodDesc": "",
         "completionCriteria": "",
-        "perkDescription": ""
+        "perkDescription": "+20 Range"
     },
     {
-        "thumb": "assets/.png",
+        "thumb": "assets/darci.png",
         "name": "D.A.R.C.I.",
-        "isAvailable": false,
-        "weaponType": "",
+        "isAvailable": true,
+        "weaponType": "Exotic Sniper Rifle",
         "unlockMethod": "",
         "unlockMethodDesc": "",
         "completionCriteria": "",
-        "perkDescription": ""
+        "perkDescription": "+20 Stability"
     },
     {
-        "thumb": "assets/.png",
+        "thumb": "assets/fighting-lion.png",
         "name": "Fighting Lion",
         "isAvailable": false,
-        "weaponType": "",
+        "weaponType": "Exotic Grenade Launcher",
         "unlockMethod": "",
         "unlockMethodDesc": "",
         "completionCriteria": "",
-        "perkDescription": ""
+        "perkDescription": "+30 Reload Speed <br >Chimera (Perk) After this weapon fires, equipped Kinetic and Power weapons gain a brief period of increased handling and precision damage"
     },
     {
-        "thumb": "assets/.png",
+        "thumb": "assets/graviton-lance.png",
         "name": "Graviton Lance",
-        "isAvailable": false,
-        "weaponType": "",
+        "isAvailable": true,
+        "weaponType": "Exotic Pulse Rifle",
         "unlockMethod": "",
-        "unlockMethodDesc": "",
+        "unlockMethodDesc": "Achieve Rank 50 Dead Orbit",
         "completionCriteria": "",
-        "perkDescription": ""
+        "perkDescription": "+20 Range<br>+15 Aim Assist/Hidden Hand (Perk) Better target acquisition"
     },
     {
-        "thumb": "assets/.png",
+        "thumb": "assets/hard-light.png",
         "name": "Hard Light",
         "isAvailable": false,
-        "weaponType": "",
+        "weaponType": "Exotic Auto Rifle",
         "unlockMethod": "",
         "unlockMethodDesc": "",
         "completionCriteria": "",
-        "perkDescription": ""
+        "perkDescription": "+25 Stability"
     },
     {
-        "thumb": "assets/.png",
+        "thumb": "assets/the-huckleberry.png",
         "name": "The Huckleberry",
-        "isAvailable": false,
-        "weaponType": "",
+        "isAvailable": true,
+        "weaponType": "Exotic Submachine Gun",
         "unlockMethod": "",
-        "unlockMethodDesc": "",
-        "completionCriteria": "",
-        "perkDescription": ""
+        "unlockMethodDesc": "Heroic Adventures",
+        "completionCriteria": "500 kills",
+        "perkDescription": "Ambitious Assassin (Perk) Overflows the magazine based on the number of rapid kills before reloading"
     },
     {
-        "thumb": "assets/.png",
+        "thumb": "assets/jade-rabbit.png",
         "name": "Jade Rabbit",
-        "isAvailable": false,
-        "weaponType": "",
+        "isAvailable": true,
+        "weaponType": "Exotic Scout Rifle",
         "unlockMethod": "",
-        "unlockMethodDesc": "",
-        "completionCriteria": "",
-        "perkDescription": ""
+        "unlockMethodDesc": "Crucible victories",
+        "completionCriteria": "250 kills in Crucible",
+        "perkDescription": "+30 Stability"
     },
     {
-        "thumb": "assets/.png",
+        "thumb": "assets/legend-of-acrius.png",
         "name": "Legend of Acrius",
         "isAvailable": false,
-        "weaponType": "",
+        "weaponType": "Exotic Shotgun",
         "unlockMethod": "",
         "unlockMethodDesc": "",
         "completionCriteria": "",
-        "perkDescription": ""
+        "perkDescription": "+40 Reload Speed<br>+40 Magazine size<br>Deeper Pockets perk"
     },
     {
-        "thumb": "assets/.png",
+        "thumb": "assets/merciless.png",
         "name": "Merciless",
-        "isAvailable": false,
-        "weaponType": "",
+        "isAvailable": true,
+        "weaponType": "Exotic Fusion Rifle",
         "unlockMethod": "",
-        "unlockMethodDesc": "",
-        "completionCriteria": "",
-        "perkDescription": ""
+        "unlockMethodDesc": "Heroic Strike/Nightfall bosses",
+        "completionCriteria": "500 kills",
+        "perkDescription": "+40 Range<br>+40 Stability"
     },
     {
-        "thumb": "assets/.png",
+        "thumb": "assets/mida-multi-tool.png",
         "name": "MIDA Multi-Tool",
         "isAvailable": false,
-        "weaponType": "",
+        "weaponType": "Exotic Scout Rifle",
         "unlockMethod": "",
-        "unlockMethodDesc": "",
-        "completionCriteria": "",
-        "perkDescription": ""
+        "unlockMethodDesc": "Competitive PVP victories",
+        "completionCriteria": "250 precision kills in Crucible",
+        "perkDescription": "Outlaw (Perk) Precision kills greatly decrease reload time"
     },
     {
-        "thumb": "assets/.png",
+        "thumb": "assets/polaris-lance.png",
         "name": "Polaris Lance",
-        "isAvailable": false,
-        "weaponType": "",
+        "isAvailable": true,
+        "weaponType": "Exotic Scout Rifle",
         "unlockMethod": "",
-        "unlockMethodDesc": "",
-        "completionCriteria": "",
-        "perkDescription": ""
+        "unlockMethodDesc": "Complete Nascent Dawn Quest 5/5",
+        "completionCriteria": "500 kills and 50 kills with Perfect shot perk",
+        "perkDescription": "Dragonfly (Perk) Precision kills create an elemental damage explosion"
     },
     {
-        "thumb": "assets/.png",
+        "thumb": "assets/prometheus-lens.png",
         "name": "Prometheus Lens",
-        "isAvailable": false,
-        "weaponType": "",
+        "isAvailable": true,
+        "weaponType": "Exotic Auto Rifle",
         "unlockMethod": "",
-        "unlockMethodDesc": "",
-        "completionCriteria": "",
-        "perkDescription": ""
+        "unlockMethodDesc": "Heroic Strike/Nightfall bosses",
+        "completionCriteria": "300 kills",
+        "perkDescription": "+20 Stability<br>+20 Handling"
     },
     {
-        "thumb": "assets/.png",
+        "thumb": "assets/the-prospector.png",
         "name": "The Prospector",
         "isAvailable": false,
-        "weaponType": "",
+        "weaponType": "Exotic Grenade Launcher",
         "unlockMethod": "",
         "unlockMethodDesc": "",
         "completionCriteria": "",
-        "perkDescription": ""
+        "perkDescription": "+40 Blast Radius<br>+70 Weapon Size<br>Deeper Pockets (Perk) Increased ammo reserves"
     },
     {
-        "thumb": "assets/.png",
+        "thumb": "assets/rat-king.png",
         "name": "Rat King",
         "isAvailable": false,
-        "weaponType": "",
+        "weaponType": "Exotic Sidearm",
         "unlockMethod": "",
         "unlockMethodDesc": "",
         "completionCriteria": "",
-        "perkDescription": ""
+        "perkDescription": "+20 Aim Assistance<br>+20 Recoil Direction<br>Infestation (Perk) Improved aim assist and recoil direction. Refreshes health on Vermin invisibility trigger"
     },
     {
-        "thumb": "assets/.png",
+        "thumb": "assets/riskrunner.png",
         "name": "Riskrunner",
-        "isAvailable": false,
-        "weaponType": "",
+        "isAvailable": true,
+        "weaponType": "Exotic Submachine Gun",
         "unlockMethod": "",
-        "unlockMethodDesc": "",
-        "completionCriteria": "",
-        "perkDescription": ""
+        "unlockMethodDesc": "Heroic Strike/Nightfall bosses",
+        "completionCriteria": "300 kills and 300 kills with chain lightning",
+        "perkDescription": "+30 Range"
     },
     {
-        "thumb": "assets/.png",
+        "thumb": "assets/skyburner-oath.png",
         "name": "Skyburner Oath",
         "isAvailable": false,
-        "weaponType": "",
+        "weaponType": "Exotic Scout Rifle",
         "unlockMethod": "",
-        "unlockMethodDesc": "",
-        "completionCriteria": "",
-        "perkDescription": ""
+        "unlockMethodDesc": "Leviathan Raid section completions",
+        "completionCriteria": "1000 Cabal Kills",
+        "perkDescription": "+30 Range"
     },
     {
-        "thumb": "assets/.png",
+        "thumb": "assets/sleeper-simulant.png",
         "name": "Sleeper Simulant",
         "isAvailable": false,
-        "weaponType": "",
+        "weaponType": "Exotic Fusion Rifle",
         "unlockMethod": "",
         "unlockMethodDesc": "",
         "completionCriteria": "",
-        "perkDescription": ""
+        "perkDescription": "+75 Charge Time<br>Accelerated Coils (Perk) Speeds up weapon charge"
     },
     {
-        "thumb": "assets/.png",
+        "thumb": "assets/sturm.png",
         "name": "Sturm",
         "isAvailable": false,
-        "weaponType": "",
+        "weaponType": "Exotic Hand Cannon",
         "unlockMethod": "",
         "unlockMethodDesc": "",
         "completionCriteria": "",
-        "perkDescription": ""
+        "perkDescription": "+20 Range<br>+40 Handling"
     },
     {
-        "thumb": "assets/.png",
+        "thumb": "assets/sunshot.png",
         "name": "Sunshot",
-        "isAvailable": false,
-        "weaponType": "",
+        "isAvailable": true,
+        "weaponType": "Exotic Hand Cannon",
         "unlockMethod": "",
-        "unlockMethodDesc": "",
-        "completionCriteria": "",
-        "perkDescription": ""
+        "unlockMethodDesc": "Achieve Rank 50 Future War Cult",
+        "completionCriteria": "500 kills and 1000 kills with Sun Blast Perk",
+        "perkDescription": "+30 Range<br>+20 Stability"
     },
     {
-        "thumb": "assets/.png",
+        "thumb": "assets/suros-regime.png",
         "name": "SUROS Regime",
         "isAvailable": false,
-        "weaponType": "",
+        "weaponType": "Exotic Auto Rifle",
         "unlockMethod": "",
         "unlockMethodDesc": "",
         "completionCriteria": "",
-        "perkDescription": ""
+        "perkDescription": "+50 Recoil Direction<br>SUROS Ascendance (Perk) Increased chance for kills to regen health"
     },
     {
-        "thumb": "assets/.png",
+        "thumb": "assets/sweet-business.png",
         "name": "Sweet Business",
-        "isAvailable": false,
-        "weaponType": "",
+        "isAvailable": true,
+        "weaponType": "Exotic Auto Rifle",
         "unlockMethod": "",
-        "unlockMethodDesc": "",
-        "completionCriteria": "",
-        "perkDescription": ""
+        "unlockMethodDesc": "Achieve Rank 50 New Monarchy",
+        "completionCriteria": "250 muit-kills (4 kills in a row)",
+        "perkDescription": "Serious Business (Perk) When this weapon is fully spun up, the flinch from incoming damage is greatly reduced"
     },
     {
-        "thumb": "assets/.png",
+        "thumb": "assets/telesto.png",
         "name": "Telesto",
         "isAvailable": false,
+        "weaponType": "Exotic Fusion Rifle",
+        "unlockMethod": "",
+        "unlockMethodDesc": "",
+        "completionCriteria": "",
+        "perkDescription": "+60 Magazine<br>+40 Weapon Size<br>Deeper Pockets (Perk) Increased ammo reserves"
+    },
+    {
+        "thumb": "assets/black-spindle.png",
+        "name": "Unknown - (Black Spindle?)",
+        "isAvailable": false,
         "weaponType": "",
         "unlockMethod": "",
         "unlockMethodDesc": "",
@@ -249,43 +259,43 @@
         "perkDescription": ""
     },
     {
-        "thumb": "assets/.png",
+        "thumb": "assets/tractor-cannon.png",
         "name": "Tractor Cannon",
-        "isAvailable": false,
-        "weaponType": "",
+        "isAvailable": true,
+        "weaponType": "Exotic Shotgun",
         "unlockMethod": "",
-        "unlockMethodDesc": "",
-        "completionCriteria": "",
-        "perkDescription": ""
+        "unlockMethodDesc": "Any PVE kill",
+        "completionCriteria": "300 Kills",
+        "perkDescription": "+70 Magazine<br>+50 Weapon Size<br> Deeper Pockets (Perk) Increased ammo reserves"
     },
     {
-        "thumb": "assets/.png",
+        "thumb": "assets/vigilance-wing.png",
         "name": "Vigilance Wing",
-        "isAvailable": false,
-        "weaponType": "",
+        "isAvailable": true,
+        "weaponType": "Exotic Pulse Rifle",
         "unlockMethod": "",
-        "unlockMethodDesc": "",
-        "completionCriteria": "",
-        "perkDescription": ""
+        "unlockMethodDesc": "Crucible victories",
+        "completionCriteria": "250 PVP kills and 5 Blood for Blood medals (avenge a teammate)",
+        "perkDescription": "Full Auto Trigger System (Perk) Holding down the trigger will fire this weapon at full auto"
     },
     {
-        "thumb": "assets/.png",
+        "thumb": "assets/wardcliff-coil.png",
         "name": "Wardcliff Coil",
-        "isAvailable": false,
-        "weaponType": "",
+        "isAvailable": true,
+        "weaponType": "Exotic Rocket Launcher",
         "unlockMethod": "",
-        "unlockMethodDesc": "",
-        "completionCriteria": "",
-        "perkDescription": ""
+        "unlockMethodDesc": "Heroic Strike/Nightfall bosses",
+        "completionCriteria": "500 kills",
+        "perkDescription": "Pinpoint Guidance Module (Perk) Improved tracking on projectiles"
     },
     {
-        "thumb": "assets/.png",
+        "thumb": "assets/wordline-zero.png",
         "name": "Wordline Zero",
-        "isAvailable": false,
-        "weaponType": "",
+        "isAvailable": true,
+        "weaponType": "Exotic Sword",
         "unlockMethod": "",
-        "unlockMethodDesc": "",
-        "completionCriteria": "",
-        "perkDescription": ""
+        "unlockMethodDesc": "any PvE kill with a sword",
+        "completionCriteria": "Hit each Level 7 EP boss (5 in total) with Worldline Zero (unshielded)",
+        "perkDescription": "Another Dimension (Perk) Reduces the activation time of Tesseract"
     }
 ]

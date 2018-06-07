@@ -7,6 +7,17 @@
       <option value="">Any</option>
       <option value="Exotic Sniper Rifle">Sniper Rifles</option>
       <option value="Exotic Scout Rifle">Scout Rifles</option>
+      <option value="Exotic Rocket Launcher">Rocket Launcher</option>
+      <option value="Exotic Auto Rifle">Rocket Launcher</option>
+      <option value="Exotic Sword">Sword</option>
+
+      <option value="Exotic Pulse Rifle">Pulse Rifle</option>
+      <option value="Exotic Hand Cannon">Hand Cannon</option>
+      <option value="Exotic Shotgun">Shotgun</option>
+      <option value="Exotic Grenade Launcher">Grenade Launcher</option>
+      <option value="Exotic Submachine Gun">Submachine Gun</option>
+      <option value="Exotic Fusion Rifle">Fusion Rifles</option>
+      <option value="Exotic Sidearm">Sidearm</option>
     </select>
     <label>
       <input type="checkbox" v-model="hideInactive">
