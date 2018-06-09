@@ -1,28 +1,32 @@
 
 <template>
    <div>
-  <div>
-    <input type="text" v-model="search"  />
+  <div class="search-field">
+    <input type="text" v-model="search" placeholder="Search by name" />
     <select v-model="weaponType">
-      <option value="">Any</option>
-      <option value="Exotic Sniper Rifle">Sniper Rifles</option>
-      <option value="Exotic Scout Rifle">Scout Rifles</option>
-      <option value="Exotic Rocket Launcher">Rocket Launcher</option>
-      <option value="Exotic Auto Rifle">Rocket Launcher</option>
-      <option value="Exotic Sword">Sword</option>
-
-      <option value="Exotic Pulse Rifle">Pulse Rifle</option>
-      <option value="Exotic Hand Cannon">Hand Cannon</option>
-      <option value="Exotic Shotgun">Shotgun</option>
-      <option value="Exotic Grenade Launcher">Grenade Launcher</option>
-      <option value="Exotic Submachine Gun">Submachine Gun</option>
+      <option value="">Any Type</option>
+      <option value="Exotic Auto Rifle">Auto Rifle</option>
       <option value="Exotic Fusion Rifle">Fusion Rifles</option>
+      <option value="Exotic Grenade Launcher">Grenade Launcher</option>
+      <option value="Exotic Hand Cannon">Hand Cannon</option>
+      <option value="Exotic Pulse Rifle">Pulse Rifle</option>
+      <option value="Exotic Rocket Launcher">Rocket Launcher</option>
+      <option value="Exotic Scout Rifle">Scout Rifles</option>
+      <option value="Exotic Sniper Rifle">Sniper Rifles</option>
+      <option value="Exotic Shotgun">Shotgun</option>
       <option value="Exotic Sidearm">Sidearm</option>
+      <option value="Exotic Submachine Gun">Submachine Gun</option>
+      <option value="Exotic Sword">Sword</option>
     </select>
-    <label>
-      <input type="checkbox" v-model="hideInactive">
+    <select v-model="status">
+      <option value="All">All</option>
+      <option value="Available">Available</option>
+      <option value="Unavailable">Unavailable</option>
+    </select>
+    <!--<label>
+       <input type="checkbox" >
       Hide Unavailable
-    </label>
+    </label> -->
   </div>
  
       <ul class="exotics">
@@ -55,9 +59,9 @@
 
 <script lang="ts">
 //https://codepen.io/SitePoint/pen/pPojGY?editors=0010
-import axios from 'axios';
+import axios from "axios";
 
-import { Exotic } from '../interfaces/exotic';
+import { Exotic } from "../interfaces/exotic";
 /*
 import {
   Vue,
@@ -104,15 +108,15 @@ export default class ExoticDecorator extends Vue {
 }
 */
 
-import Vue from 'vue';
+import Vue from "vue";
 export default Vue.extend({
-  props: ['items'],
+  props: ["items"],
   data() {
     return {
-      search: '',
-      weaponType: '',
+      search: "",
+      weaponType: "",
       filteredItems: [],
-      hideInactive: false
+      status: "All"
     };
   },
   watch: {
@@ -122,7 +126,7 @@ export default Vue.extend({
     weaponType: function() {
       this.setFilteredItems();
     },
-    hideInactive: function() {
+    status: function() {
       this.setFilteredItems();
     }
   },
@@ -158,7 +162,8 @@ export default Vue.extend({
             include = false;
           }
 
-          if (this.hideInactive === true && e.isAvailable === false){
+          let isAvailFlag = this.status === "Available" ? true : false;
+          if (this.status !== "All" && isAvailFlag !== e.isAvailable) {
             include = false;
           }
 
@@ -166,7 +171,6 @@ export default Vue.extend({
           //return false;
           //return true;
         });
-        console.log(filteredItems);
         this.filteredItems = filteredItems;
       } else {
         this.filteredItems = [];

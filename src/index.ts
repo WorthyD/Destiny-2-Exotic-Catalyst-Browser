@@ -7,7 +7,7 @@ let v = new Vue({
   el: '#app',
   template: `
   <div>    
-  <h1>Destiny 2 Exotic Catalyst Browser</h1>
+  <h1 class="site-title">Destiny 2 Exotic Catalyst Browser</h1>
     <div>
         <exotics-component v-if="!loading" :items="items" :initialEnthusiasm="5" />
     </div>
