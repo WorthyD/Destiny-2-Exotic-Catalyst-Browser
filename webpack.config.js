@@ -88,7 +88,6 @@ module.exports = {
   performance: {
     hints: false
   },
-  mode: 'development',
   plugins: [
     // make sure to include the plugin for the magic
     new VueLoaderPlugin()
