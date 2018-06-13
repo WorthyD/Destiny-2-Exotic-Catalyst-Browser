@@ -34,17 +34,23 @@
           <!-- <li v-for="e in items"  v-bind:key="e.name" class="exotic"> -->
             <img :src="e.thumb" alt=""> 
             <div class="exotic-info">  
-              <h3 class="title">{{e.name}} <span v-if="e.isAvailable" class="available">Available</span><span class="unavailable" v-else>Unavailable</span></h3>
-              <h4 class="sub-title">{{e.weaponType}}</h4>
-              <p class="summary unlock-proper">{{e.unlockMethod}}</p>
-              <p class="summary">{{e.unlockMethodDesc}}</p>
+              <div class="mb-1">
+                <h3 class="title">{{e.name}} <span v-if="e.isAvailable" class="available">Available</span><span class="unavailable" v-else>Unavailable</span></h3>
+                <h4 class="sub-title">{{e.weaponType}}</h4>
+              </div>
+              <div  class="mb-1" v-if="e.unlockMethod">
+                <h5>Unlock Method</h5>
+                <p class="summary unlock-proper">{{e.unlockMethod}}</p>
+                <p class="summary">{{e.unlockMethodDesc}}</p>
+              </div>
+
               <div class="unlock-info">
-                <div>              
+                <div v-if="e.completionCriteria">              
                   <h5>Completion Criteria</h5>
                   <p  class="summary" v-html="e.completionCriteria"></p>
                 </div>
 
-<div>              
+<div v-if="e.perkDescription">              
   <h5>Catalyst Perk</h5>
   <p class="summary" v-html="e.perkDescription"></p>
 </div>
@@ -59,9 +65,9 @@
 
 <script lang="ts">
 //https://codepen.io/SitePoint/pen/pPojGY?editors=0010
-import axios from "axios";
+import axios from 'axios';
 
-import { Exotic } from "../interfaces/exotic";
+import { Exotic } from '../interfaces/exotic';
 /*
 import {
   Vue,
@@ -108,15 +114,15 @@ export default class ExoticDecorator extends Vue {
 }
 */
 
-import Vue from "vue";
+import Vue from 'vue';
 export default Vue.extend({
-  props: ["items"],
+  props: ['items'],
   data() {
     return {
-      search: "",
-      weaponType: "",
+      search: '',
+      weaponType: '',
       filteredItems: [],
-      status: "All"
+      status: 'All'
     };
   },
   watch: {
@@ -162,8 +168,8 @@ export default Vue.extend({
             include = false;
           }
 
-          let isAvailFlag = this.status === "Available" ? true : false;
-          if (this.status !== "All" && isAvailFlag !== e.isAvailable) {
+          let isAvailFlag = this.status === 'Available' ? true : false;
+          if (this.status !== 'All' && isAvailFlag !== e.isAvailable) {
             include = false;
           }
 
