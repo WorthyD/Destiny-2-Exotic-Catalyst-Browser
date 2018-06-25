@@ -27,6 +27,18 @@
        <input type="checkbox" >
       Hide Unavailable
     </label> -->
+           <select v-model="unlockCategory" placeholder="Unlock Activity">
+            <option value="">All Activities</option>
+            <option value="PvE">PvE</option>
+            <option value="PvP">PvP</option>
+            <option value="Strikes">Strikes</option>
+            <option value="Raids">Raids</option>
+            <option value="Quests">Quests</option>
+            <option value="Adventures">Adventures</option>
+            <option value="Faction Rallies">Faction Rallies</option>
+            <option value="Other">Other</option>
+       </select>
+ 
   </div>
  
       <ul class="exotics">
@@ -65,9 +77,9 @@
 
 <script lang="ts">
 //https://codepen.io/SitePoint/pen/pPojGY?editors=0010
-import axios from 'axios';
+import axios from "axios";
 
-import { Exotic } from '../interfaces/exotic';
+import { Exotic } from "../interfaces/exotic";
 /*
 import {
   Vue,
@@ -114,15 +126,16 @@ export default class ExoticDecorator extends Vue {
 }
 */
 
-import Vue from 'vue';
+import Vue from "vue";
 export default Vue.extend({
-  props: ['items'],
+  props: ["items"],
   data() {
     return {
-      search: '',
-      weaponType: '',
+      search: "",
+      weaponType: "",
       filteredItems: [],
-      status: 'All'
+      status: "All",
+      unlockCategory: ""
     };
   },
   watch: {
@@ -134,12 +147,15 @@ export default Vue.extend({
     },
     status: function() {
       this.setFilteredItems();
+    },
+    unlockCategory: function() {
+      this.setFilteredItems();
     }
   },
   created() {
     this.setFilteredItems();
   },
- methods: {
+  methods: {
     setFilteredItems(): any {
       if (this.items) {
         var filteredItems = this.items.filter((e: Exotic) => {
@@ -160,8 +176,12 @@ export default Vue.extend({
             include = false;
           }
 
-          let isAvailFlag = this.status === 'Available' ? true : false;
-          if (this.status !== 'All' && isAvailFlag !== e.isAvailable) {
+          let isAvailFlag = this.status === "Available" ? true : false;
+          if (this.status !== "All" && isAvailFlag !== e.isAvailable) {
+            include = false;
+          }
+
+          if (this.unlockCategory !== '' && e.unlockCategory !== this.unlockCategory ){
             include = false;
           }
 

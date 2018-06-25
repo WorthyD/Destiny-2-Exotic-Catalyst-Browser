@@ -3,6 +3,7 @@ export interface Exotic {
     isAvailable: boolean;
     weaponType: string;
     unlockMethod: string;
+    unlockCategory: string;
     completionCriteria: string;
     perkDescription: string;
 }
