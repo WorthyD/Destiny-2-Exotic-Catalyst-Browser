@@ -139,15 +139,7 @@ export default Vue.extend({
   created() {
     this.setFilteredItems();
   },
-  //  methods: {
-  //   getItems() {
-  //     console.log('updating');
-  //     axios.get('exotics.json').then(response => {
-  //       this.items = response.data;
-  //     });
-  //   }
-  // },
-  methods: {
+ methods: {
     setFilteredItems(): any {
       if (this.items) {
         var filteredItems = this.items.filter((e: Exotic) => {
