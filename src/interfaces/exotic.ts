@@ -4,7 +4,7 @@ export interface Exotic {
     weaponType: string;
     unlockMethod: string;
     completionCriteria: string;
-    perkDescriptioni: string;
+    perkDescription: string;
 }
 /*
 
