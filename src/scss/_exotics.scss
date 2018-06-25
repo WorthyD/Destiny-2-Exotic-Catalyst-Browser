@@ -1,18 +1,19 @@
 @import "_variables.scss";
-.search-field{
+.search-field {
     border-bottom: 1px solid rgba(245, 245, 245, 0.1);
     padding: 1em 0;
-    text-align:center;
-
-    select, input[type="text"]{
+    text-align: center;
+    select,
+    input[type="text"] {
         background: rgb(42, 51, 62) none;
         border: 1px solid rgba(97, 119, 147, 0);
         color: #f5f5f5;
         outline: medium none;
-        font-size:1.1em;
-        padding:1em;
+        font-size: 1.1em;
+        padding: 1em;
     }
- }
+}
+
 .exotics {
     display: flex;
     flex-direction: column;
@@ -40,6 +41,10 @@
             margin-right: 20px;
         }
     }
+    h5 {
+        font-size: 1.1em;
+        margin: 0;
+    }
     .exotic-info {
         overflow: hidden;
         h3 span {
@@ -54,8 +59,10 @@
         .unavailable {
             background-color: $red;
         }
+   
     }
     .title {
+        font-size: 1.4em;
         margin: 0;
     }
     .sub-title {
@@ -71,10 +78,6 @@
         justify-content: space-between;
         div {
             flex-basis: 50%;
-        }
-        h5 {
-            margin: 0;
-            font-size: 1.1em;
         }
     }
 }
