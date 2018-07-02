@@ -4,50 +4,55 @@
     "name": "Borealis",
     "isAvailable": true,
     "weaponType": "Exotic Sniper Rifle",
-    "unlockMethod": "",
+    "unlockMethod": "Found by defeating the enemies of Humanity wherever they lurk.",
     "unlockMethodDesc": "PVE Kills",
     "completionCriteria": "150 Arc Kills <br> 150 Solar Kills <br> 150 Void Kills",
-    "perkDescription": "+20 Reload Speed"
+    "perkDescription": "+20 Reload Speed",
+    "unlockCategory": "PvE"
   },
   {
     "thumb": "assets/coldheart.png",
     "name": "Coldheart",
     "isAvailable": true,
     "weaponType": "Exotic Auto Rifle",
-    "unlockMethod": "",
+    "unlockMethod": "Found in strikes against the most challenging opponents. ",
     "unlockMethodDesc": "Heroic Strike/Nightfall bosses",
     "completionCriteria": "300 kills",
-    "perkDescription": "+20 Stability<br>+20 Reload Speed"
+    "perkDescription": "+20 Stability<br>+20 Reload Speed",
+    "unlockCategory": "PvP"
   },
   {
     "thumb": "assets/the-colony.png",
     "name": "The Colony",
     "isAvailable": true,
     "weaponType": "Exotic Grenade Launcher",
-    "unlockMethod": "",
+    "unlockMethod": "Found by earning victory in the Crucible.",
     "unlockMethodDesc": "Crucible victories",
     "completionCriteria": "500 Kills",
-    "perkDescription": "+10 Magazine<br>+30 Weapon Size<br>Deeper Pockets (Perk) Increased ammo reserves"
+    "perkDescription": "+10 Magazine<br>+30 Weapon Size<br>Deeper Pockets (Perk) Increased ammo reserves",
+    "unlockCategory": "PvP"
   },
   {
     "thumb": "assets/crimson.png",
     "name": "Crimson",
     "isAvailable": true,
     "weaponType": "Exotic Hand Cannon",
-    "unlockMethod": "",
+    "unlockMethod": "Found by defeating the enemies of Humanity wherever they lurk.",
     "unlockMethodDesc": "PVE Kills",
     "completionCriteria": "300 precision kills",
-    "perkDescription": "+20 Range"
+    "perkDescription": "+20 Range",
+    "unlockCategory": "PvE"
   },
   {
     "thumb": "assets/darci.png",
     "name": "D.A.R.C.I.",
     "isAvailable": true,
     "weaponType": "Exotic Sniper Rifle",
-    "unlockMethod": "",
+    "unlockMethod": "Found by defeating the enemies of Humanity wherever they lurk.",
     "unlockMethodDesc": "PVE Kills",
     "completionCriteria": "300 precision kills",
-    "perkDescription": "+20 Stability"
+    "perkDescription": "+20 Stability",
+    "unlockCategory": "PvE"
   },
   {
     "thumb": "assets/fighting-lion.png",
@@ -64,10 +69,11 @@
     "name": "Graviton Lance",
     "isAvailable": true,
     "weaponType": "Exotic Pulse Rifle",
-    "unlockMethod": "",
+    "unlockMethod": "Found by pledging to the seekers of exodus.",
     "unlockMethodDesc": "Achieve Rank 50 Dead Orbit",
     "completionCriteria": "500 kills and 1000 kills with Cosmology perk",
-    "perkDescription": "+20 Range<br>+15 Aim Assist<br>Hidden Hand (Perk) Better target acquisition"
+    "perkDescription": "+20 Range<br>+15 Aim Assist<br>Hidden Hand (Perk) Better target acquisition",
+    "unlockCategory": "Faction Rallies"
   },
   {
     "thumb": "assets/hard-light.png",
@@ -84,20 +90,22 @@
     "name": "The Huckleberry",
     "isAvailable": true,
     "weaponType": "Exotic Submachine Gun",
-    "unlockMethod": "",
+    "unlockMethod": "Found through heroism in the most challenging adventures.",
     "unlockMethodDesc": "Heroic Adventures",
     "completionCriteria": "500 kills",
-    "perkDescription": "Ambitious Assassin (Perk) Overflows the magazine based on the number of rapid kills before reloading"
+    "perkDescription": "Ambitious Assassin (Perk) Overflows the magazine based on the number of rapid kills before reloading",
+    "unlockCategory": "Adventures"
   },
   {
     "thumb": "assets/jade-rabbit.png",
     "name": "Jade Rabbit",
     "isAvailable": true,
     "weaponType": "Exotic Scout Rifle",
-    "unlockMethod": "",
+    "unlockMethod": "Found by earning victory in the Crucible.",
     "unlockMethodDesc": "Crucible victories",
     "completionCriteria": "250 kills in Crucible",
-    "perkDescription": "+30 Stability"
+    "perkDescription": "+30 Stability",
+    "unlockCategory": "PvP"
   },
   {
     "thumb": "assets/legend-of-acrius.png",
@@ -114,40 +122,44 @@
     "name": "Merciless",
     "isAvailable": true,
     "weaponType": "Exotic Fusion Rifle",
-    "unlockMethod": "",
+    "unlockMethod": "Found in strikes against the most challenging opponents.",
     "unlockMethodDesc": "Heroic Strike/Nightfall bosses",
     "completionCriteria": "500 kills",
-    "perkDescription": "+40 Range<br>+40 Stability"
+    "perkDescription": "+40 Range<br>+40 Stability",
+    "unlockCategory": "Strikes"
   },
   {
     "thumb": "assets/mida-multi-tool.png",
     "name": "MIDA Multi-Tool",
     "isAvailable": false,
     "weaponType": "Exotic Scout Rifle",
-    "unlockMethod": "",
+    "unlockMethod": "Found through victory most glorious in the Crucible.",
     "unlockMethodDesc": "Competitive PVP victories",
     "completionCriteria": "250 precision kills in Crucible",
-    "perkDescription": "Outlaw (Perk) Precision kills greatly decrease reload time"
+    "perkDescription": "Outlaw (Perk) Precision kills greatly decrease reload time",
+    "unlockCategory": "PvP"
   },
   {
     "thumb": "assets/polaris-lance.png",
     "name": "Polaris Lance",
     "isAvailable": true,
     "weaponType": "Exotic Scout Rifle",
-    "unlockMethod": "",
+    "unlockMethod": "Found by pursuing the secrets of a newly awakened intelligence.",
     "unlockMethodDesc": "Complete Nascent Dawn Quest 5/5",
     "completionCriteria": "500 kills and 50 kills with Perfect shot perk",
-    "perkDescription": "Dragonfly (Perk) Precision kills create an elemental damage explosion"
+    "perkDescription": "Dragonfly (Perk) Precision kills create an elemental damage explosion",
+    "unlockCategory": "Quests"
   },
   {
     "thumb": "assets/prometheus-lens.png",
     "name": "Prometheus Lens",
     "isAvailable": true,
     "weaponType": "Exotic Auto Rifle",
-    "unlockMethod": "",
+    "unlockMethod": "Found in strikes against the most challenging opponents.",
     "unlockMethodDesc": "Heroic Strike/Nightfall bosses",
     "completionCriteria": "300 kills",
-    "perkDescription": "+20 Stability<br>+20 Handling"
+    "perkDescription": "+20 Stability<br>+20 Handling",
+    "unlockCategory": "Strikes"
   },
   {
     "thumb": "assets/the-prospector.png",
@@ -174,20 +186,22 @@
     "name": "Riskrunner",
     "isAvailable": true,
     "weaponType": "Exotic Submachine Gun",
-    "unlockMethod": "",
+    "unlockMethod": "Found in strikes against the most challenging opponents.",
     "unlockMethodDesc": "Heroic Strike/Nightfall bosses",
     "completionCriteria": "300 kills and 300 kills with chain lightning",
-    "perkDescription": "+30 Range"
+    "perkDescription": "+30 Range",
+    "unlockCategory": "Strikes"
   },
   {
     "thumb": "assets/skyburner-oath.png",
     "name": "Skyburner Oath",
     "isAvailable": false,
     "weaponType": "Exotic Scout Rifle",
-    "unlockMethod": "",
+    "unlockMethod": "Found by currying the emperor's favor.",
     "unlockMethodDesc": "Leviathan Raid section completions",
     "completionCriteria": "1000 Cabal Kills",
-    "perkDescription": "+30 Range"
+    "perkDescription": "+30 Range",
+    "unlockCategory": "Raids"
   },
   {
     "thumb": "assets/sleeper-simulant.png",
@@ -214,10 +228,11 @@
     "name": "Sunshot",
     "isAvailable": true,
     "weaponType": "Exotic Hand Cannon",
-    "unlockMethod": "",
+    "unlockMethod": "Found by pledging to the followers of war.",
     "unlockMethodDesc": "Achieve Rank 50 Future War Cult",
     "completionCriteria": "500 kills and 1000 kills with Sun Blast Perk",
-    "perkDescription": "+30 Range<br>+20 Stability"
+    "perkDescription": "+30 Range<br>+20 Stability",
+    "unlockCategory": "Faction Rallies"
   },
   {
     "thumb": "assets/suros-regime.png",
@@ -234,10 +249,11 @@
     "name": "Sweet Business",
     "isAvailable": true,
     "weaponType": "Exotic Auto Rifle",
-    "unlockMethod": "",
+    "unlockMethod": "Found by pledging to the defenders of Earth.",
     "unlockMethodDesc": "Achieve Rank 50 New Monarchy",
     "completionCriteria": "250 muit-kills (4 kills in a row)",
-    "perkDescription": "Serious Business (Perk) When this weapon is fully spun up, the flinch from incoming damage is greatly reduced"
+    "perkDescription": "Serious Business (Perk) When this weapon is fully spun up, the flinch from incoming damage is greatly reduced",
+    "unlockCategory": "Faction Rallies"
   },
   {
     "thumb": "assets/telesto.png",
@@ -254,10 +270,11 @@
     "name": "Tractor Cannon",
     "isAvailable": true,
     "weaponType": "Exotic Shotgun",
-    "unlockMethod": "",
+    "unlockMethod": "Found by defeating the enemies of Humanity wherever they lurk.",
     "unlockMethodDesc": "Any PVE kill",
     "completionCriteria": "300 Kills",
-    "perkDescription": "+70 Magazine<br>+50 Weapon Size<br> Deeper Pockets (Perk) Increased ammo reserves"
+    "perkDescription": "+70 Magazine<br>+50 Weapon Size<br> Deeper Pockets (Perk) Increased ammo reserves",
+    "unlockCategory": "PvE"
   },
   {
     "thumb": "assets/black-spindle.png",
@@ -274,29 +291,32 @@
     "name": "Vigilance Wing",
     "isAvailable": true,
     "weaponType": "Exotic Pulse Rifle",
-    "unlockMethod": "",
+    "unlockMethod": "Found by earning victory in the Crucible.",
     "unlockMethodDesc": "Crucible victories",
     "completionCriteria": "250 PVP kills and 5 Blood for Blood medals (avenge a teammate)",
-    "perkDescription": "Full Auto Trigger System (Perk) Holding down the trigger will fire this weapon at full auto"
+    "perkDescription": "Full Auto Trigger System (Perk) Holding down the trigger will fire this weapon at full auto",
+    "unlockCategory": "PvP"
   },
   {
     "thumb": "assets/wardcliff-coil.png",
     "name": "Wardcliff Coil",
     "isAvailable": true,
     "weaponType": "Exotic Rocket Launcher",
-    "unlockMethod": "",
+    "unlockMethod": "Found in strikes against the most challenging opponents.",
     "unlockMethodDesc": "Heroic Strike/Nightfall bosses",
     "completionCriteria": "500 kills",
-    "perkDescription": "Pinpoint Guidance Module (Perk) Improved tracking on projectiles"
+    "perkDescription": "Pinpoint Guidance Module (Perk) Improved tracking on projectiles",
+    "unlockCategory": "Strikes"
   },
   {
     "thumb": "assets/wordline-zero.png",
     "name": "Wordline Zero",
     "isAvailable": true,
     "weaponType": "Exotic Sword",
-    "unlockMethod": "",
+    "unlockMethod": "???",
     "unlockMethodDesc": "any PvE kill with a sword",
     "completionCriteria": "Hit each Level 7 EP boss (5 in total) with Worldline Zero (unshielded)",
-    "perkDescription": "Another Dimension (Perk) Reduces the activation time of Tesseract"
+    "perkDescription": "Another Dimension (Perk) Reduces the activation time of Tesseract",
+    "unlockCategory": "PvE"
   }
 ]

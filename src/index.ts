@@ -23,12 +23,10 @@ let v = new Vue({
     ExoticsComponent,
   },
   mounted() {
-    console.log('stuff');
     this.getItems();
   },
   methods: {
     getItems() {
-      console.log('updating');
       axios.get('exotics.json').then(response => {
         this.loading = false;
         this.items = response.data;
