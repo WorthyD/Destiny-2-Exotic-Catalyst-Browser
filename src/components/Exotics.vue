@@ -41,7 +41,11 @@
  
   </div>
  
-      <ul class="exotics">
+      <!-- <ul class="exotics"> -->
+        <transition-group class="exotics" name="list" tag="ul" v-bind:css="false"
+    v-on:before-enter="beforeEnter"
+    v-on:enter="enter"
+    v-on:leave="leave">
           <li v-for="e in filteredItems"  v-bind:key="e.name" class="exotic">
           <!-- <li v-for="e in items"  v-bind:key="e.name" class="exotic"> -->
             <img :src="e.thumb" alt=""> 
@@ -71,27 +75,29 @@
             </div>
 
           </li>
-      </ul>
+        </transition-group>
+      <!-- </ul> -->
+
     </div>
 </template>
 
 <script lang="ts">
 //https://codepen.io/SitePoint/pen/pPojGY?editors=0010
-import axios from "axios";
+import axios from 'axios';
+import  Velocity from 'velocity-animate';  
 
-import { Exotic } from "../interfaces/exotic";
+import { Exotic } from '../interfaces/exotic';
 
-
-import Vue from "vue";
+import Vue from 'vue';
 export default Vue.extend({
-  props: ["items"],
+  props: ['items'],
   data() {
     return {
-      search: "",
-      weaponType: "",
+      search: '',
+      weaponType: '',
       filteredItems: [],
-      status: "All",
-      unlockCategory: ""
+      status: 'All',
+      unlockCategory: ''
     };
   },
   watch: {
@@ -132,12 +138,15 @@ export default Vue.extend({
             include = false;
           }
 
-          let isAvailFlag = this.status === "Available" ? true : false;
-          if (this.status !== "All" && isAvailFlag !== e.isAvailable) {
+          let isAvailFlag = this.status === 'Available' ? true : false;
+          if (this.status !== 'All' && isAvailFlag !== e.isAvailable) {
             include = false;
           }
 
-          if (this.unlockCategory !== '' && e.unlockCategory !== this.unlockCategory ){
+          if (
+            this.unlockCategory !== '' &&
+            e.unlockCategory !== this.unlockCategory
+          ) {
             include = false;
           }
 
@@ -149,6 +158,18 @@ export default Vue.extend({
       } else {
         this.filteredItems = [];
       }
+    },
+    enter: function(el:any, done:any) {
+      var delay = el.dataset.index * 150;
+      setTimeout(function() {
+        Velocity(el, { opacity: 1, height: '1.6em' }, { complete: done });
+      }, delay);
+    },
+    leave: function(el:any, done:any) {
+      var delay = el.dataset.index * 150;
+      setTimeout(function() {
+        Velocity(el, { opacity: 0, height: 0 }, { complete: done });
+      }, delay);
     }
   }
 });
