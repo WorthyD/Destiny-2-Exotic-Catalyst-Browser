@@ -43,7 +43,6 @@
  
       <!-- <ul class="exotics"> -->
         <transition-group class="exotics" name="list" tag="ul" v-bind:css="false"
-    v-on:before-enter="beforeEnter"
     v-on:enter="enter"
     v-on:leave="leave">
           <li v-for="e in filteredItems"  v-bind:key="e.name" class="exotic">
@@ -84,8 +83,8 @@
 <script lang="ts">
 //https://codepen.io/SitePoint/pen/pPojGY?editors=0010
 import axios from 'axios';
-import  Velocity from 'velocity-animate';  
-
+//import {Velocity} from 'velocity-animate';
+// look into https://www.npmjs.com/package/vue2-animate
 import { Exotic } from '../interfaces/exotic';
 
 import Vue from 'vue';
@@ -162,13 +161,15 @@ export default Vue.extend({
     enter: function(el:any, done:any) {
       var delay = el.dataset.index * 150;
       setTimeout(function() {
-        Velocity(el, { opacity: 1, height: '1.6em' }, { complete: done });
+        //Velocity(el, { opacity: 1, height: '1.6em' }, { complete: done });
+      console.log('entering');
       }, delay);
     },
     leave: function(el:any, done:any) {
       var delay = el.dataset.index * 150;
       setTimeout(function() {
-        Velocity(el, { opacity: 0, height: 0 }, { complete: done });
+     //   console.log(Velocity);
+       // Velocity(el, { opacity: 0, height: 0 }, { complete: done });
       }, delay);
     }
   }

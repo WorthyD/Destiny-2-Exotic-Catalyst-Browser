@@ -52,6 +52,9 @@ module.exports = {
       'vue$': 'vue/dist/vue.esm.js'
     }
   },
+  externals:{
+    "velocity-animate": 'velocity-animate'
+  },
   devServer: {
     historyApiFallback: true,
     watchContentBase: true,
