@@ -40,11 +40,11 @@
        </select>
  
   </div>
- 
+ <!-- <transition-group name="fade" tag="ul" class="list-group">
+    <li v-for="(item, i) in items" class="list-group-item" v-bind:key="i">{{ item }}</li>
+</transition-group> -->
       <!-- <ul class="exotics"> -->
-        <transition-group class="exotics" name="list" tag="ul" v-bind:css="false"
-    v-on:enter="enter"
-    v-on:leave="leave">
+        <transition-group class="exotics" name="fade" tag="ul">
           <li v-for="e in filteredItems"  v-bind:key="e.name" class="exotic">
           <!-- <li v-for="e in items"  v-bind:key="e.name" class="exotic"> -->
             <img :src="e.thumb" alt=""> 
@@ -157,7 +157,7 @@ export default Vue.extend({
       } else {
         this.filteredItems = [];
       }
-    },
+    }/*,
     enter: function(el:any, done:any) {
       var delay = el.dataset.index * 150;
       setTimeout(function() {
@@ -172,8 +172,8 @@ export default Vue.extend({
        // Velocity(el, { opacity: 0, height: 0 }, { complete: done });
       }, delay);
     }
+    */
   }
 });
 </script>
 
-<style src="../scss/main.scss"></style>

@@ -5,6 +5,8 @@ const {
 } = require('vue-loader')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
+//require('vue2-animate/src/sass/vue2-animate.scss')
+
 module.exports = {
   entry: {
     index: path.resolve(__dirname, "src/index.ts"),
@@ -20,15 +22,11 @@ module.exports = {
         test: /\.vue$/,
         loader: 'vue-loader',
       },
-       {
-         test: /\.s[a|c]ss$/,
-         loader: 'vue-style-loader!css-loader!sass-loader'
-       },
       {
-        test: /\.scss$/,
-        loader: 'vue-style-loader!css-loader!sass-loader'
+        test: /\.s[a|c]ss$/,
+        use: ['vue-style-loader', MiniCssExtractPlugin.loader, 'css-loader',  'sass-loader']
+        //loader: 'vue-style-loader!css-loader!sass-loader'
       },
- 
       {
         test: /\.tsx?$/,
         loader: 'ts-loader',
@@ -52,8 +50,8 @@ module.exports = {
       'vue$': 'vue/dist/vue.esm.js'
     }
   },
-  externals:{
-    "velocity-animate": 'velocity-animate'
+  externals: {
+    //"velocity-animate": 'velocity-animate'
   },
   devServer: {
     historyApiFallback: true,
@@ -65,7 +63,10 @@ module.exports = {
   },
   plugins: [
     // make sure to include the plugin for the magic
-    new VueLoaderPlugin()
+    new VueLoaderPlugin(),
+    new MiniCssExtractPlugin({
+      filename: '[name].css',
+    })
   ],
   devtool: '#eval-source-map'
 }

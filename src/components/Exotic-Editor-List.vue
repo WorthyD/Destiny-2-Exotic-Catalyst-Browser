@@ -31,5 +31,3 @@ export default Vue.extend({
   }
 });
 </script>
-
-<style src="../scss/main.scss"></style>
