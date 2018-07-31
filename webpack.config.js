@@ -24,7 +24,7 @@ module.exports = {
       },
       {
         test: /\.s[a|c]ss$/,
-        use: ['vue-style-loader', MiniCssExtractPlugin.loader, 'css-loader',  'sass-loader']
+        use: ['vue-style-loader', MiniCssExtractPlugin.loader, 'css-loader','postcss-loader',  'sass-loader']
         //loader: 'vue-style-loader!css-loader!sass-loader'
       },
       {

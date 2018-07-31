@@ -87,7 +87,7 @@ import axios from 'axios';
 // look into https://www.npmjs.com/package/vue2-animate
 import { Exotic } from '../interfaces/exotic';
 
-import Vue from 'vue';
+import Vue from 'vue';  
 export default Vue.extend({
   props: ['items'],
   data() {
