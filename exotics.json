@@ -110,12 +110,13 @@
   {
     "thumb": "assets/legend-of-acrius.png",
     "name": "Legend of Acrius",
-    "isAvailable": false,
+    "isAvailable": true,
     "weaponType": "Exotic Shotgun",
-    "unlockMethod": "",
-    "unlockMethodDesc": "",
-    "completionCriteria": "",
-    "perkDescription": "+40 Reload Speed<br>+40 Magazine size<br>Deeper Pockets perk"
+    "unlockMethod": "Prestige Leviathan",
+    "unlockMethodDesc": "Has a chance to drop after completing the Leviathan Raid on Prestige.",
+    "completionCriteria": "500 kills",
+    "perkDescription": "+40 Reload Speed<br>Magazine Size: 6",
+    "unlockCategory": "Raids"
   },
   {
     "thumb": "assets/merciless.png",
@@ -206,12 +207,13 @@
   {
     "thumb": "assets/sleeper-simulant.png",
     "name": "Sleeper Simulant",
-    "isAvailable": false,
+    "isAvailable": true,
     "weaponType": "Exotic Fusion Rifle",
-    "unlockMethod": "",
-    "unlockMethodDesc": "",
-    "completionCriteria": "",
-    "perkDescription": "+75 Charge Time<br>Accelerated Coils (Perk) Speeds up weapon charge"
+    "unlockMethod": "Enounter Chests in Prestige EoW and SoS",
+    "unlockMethodDesc": "Any encounter chest (and secret chest) has a chance to drop this catalyst.",
+    "completionCriteria": "First step:\n•1000 kills with ikelos sniper rifle equipped\n•1000 kills with ikelos shotgun equipped\n•2000 kills with ikelos smg equipped\n\nStep 2:\nUnknown",
+    "perkDescription": "+75 Charge Time<br>Accelerated Coils (Perk) Speeds up weapon charge",
+    "unlockCategory": "Raids"
   },
   {
     "thumb": "assets/sturm.png",
